@@ -6,6 +6,7 @@ import Contact from '../pages/Contact'
 import FAQs from '../pages/FAQs'
 import Location from '../pages/Location'
 import Index from '../pages/Index'
+import ProgramPage from '../pages/ProgramPage'
 
 const MyRoute = () => {
   return (
@@ -17,6 +18,7 @@ const MyRoute = () => {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/faq' element={<FAQs/>} />
         <Route path='/location' element={<Location/>} />
+        <Route path='/program' element={<ProgramPage/>} />
     </Routes>
     </>
   )
