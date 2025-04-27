@@ -1,8 +1,11 @@
 import React from 'react'
+import MyRoute from './myroutes/MyRoute'
 
 const App = () => {
   return (
-    <div className='text-bold text-center bg-pink-200'>App</div>
+   <>
+   <MyRoute/>
+   </>
   )
 }
 
