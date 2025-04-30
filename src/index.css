@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "muli";
+    src: url("./assets/Muli-1GDlj.ttf");
+}

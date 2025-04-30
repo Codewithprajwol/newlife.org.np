@@ -5,7 +5,6 @@ import About from '../pages/About'
 import Contact from '../pages/Contact'
 import FAQs from '../pages/FAQs'
 import Location from '../pages/Location'
-import Index from '../pages/Index'
 import ProgramPage from '../pages/Program'
 import Why from '../pages/Why'
 
@@ -13,7 +12,7 @@ const MyRoute = () => {
   return (
     <>
     <Routes>
-        <Route path='/' element={<Index/>} />
+        <Route path='/' element={<Home/>} />
         <Route path='/home' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contact/>} />
