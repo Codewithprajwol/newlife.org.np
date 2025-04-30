@@ -1,11 +1,11 @@
 import React from 'react'
 import MyRoute from './myroutes/MyRoute'
-import TestHeader from './components/TestHeader'
+import Header from './components/Header'
 
 const App = () => {
   return (
    <>
-   <TestHeader/>
+   <Header/>
    <MyRoute/>
    </>
   )

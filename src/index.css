@@ -4,3 +4,17 @@
     font-family: "muli";
     src: url("./assets/Muli-1GDlj.ttf");
 }
+
+:root{
+    --primary:#3A5451;
+}
+
+@layer utilities{
+    .text-primary{
+        color: var(--primary);
+    }
+    .font-muli{
+        font-family: "muli", sans-serif;
+    }
+
+}
