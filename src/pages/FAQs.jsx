@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import { faqs } from '../utilities/FAQ'
+import { Link } from 'react-router-dom'
 
 const FAQs = () => {
   const [openDetail, setOpenDetail] = useState(null)
@@ -70,7 +71,7 @@ const FAQs = () => {
             </div>
             <div className='flex justify-center items-center'>
               <button className='bg-[#E7CB93] text-black px-4 py-2 rounded cursor-pointer'>
-                <a href="/contact">Contact Us</a>
+                <Link to="/contact">Contact Us</Link>
               </button>
             </div>
           </div>
