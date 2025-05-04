@@ -5,11 +5,11 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-   <>
+   <div className='w-full relative overflow-hidden'>
    <Header/>
    <MyRoute/>
    <Footer/>
-   </>
+   </div>
   )
 }
 

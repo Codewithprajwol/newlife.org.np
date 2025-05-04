@@ -35,7 +35,7 @@ const AboutUs = () => {
     <h1 className=" text-3xl text-primary">Your Healing Starts Here</h1>
          <p className=''>NewLife Fellowship was founded with one vision: to bring hope, healing, and restoration to lives burdened by addiction, mental health issues, and emotional pain.  </p>
         <p className=''>Our team of trained professionals, counselors, and therapists are passionate about providing personalized care in a nurturing, supportive environment. At NewLife, we focus not just on recovery, but on building a new, stronger foundation for life ahead.  </p>
-        <div >
+        {/* <div >
            <h1 className='text-2xl md:text-3xl mb-2'>Our Core Values</h1>
             <ul>
                 <li>Compassion and Respect  </li>
@@ -43,7 +43,7 @@ const AboutUs = () => {
                <li>Holistic and Personalized Care</li>
                <li>Community and Connection  </li>
             </ul>
-        </div>
+        </div> */}
   </div>
     </div>
 

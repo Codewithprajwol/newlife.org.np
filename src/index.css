@@ -7,6 +7,7 @@
 
 :root{
     --primary:#3A5451;
+    --dropdown:#F4F5F5;
 }
 
 @layer utilities{
@@ -15,6 +16,9 @@
     }
     .font-muli{
         font-family: "muli", sans-serif;
+    }
+    .bg-dropdown{
+        background-color: var(--dropdown);
     }
 
 }
