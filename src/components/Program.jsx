@@ -2,8 +2,8 @@ import React from 'react'
 
 const Program = () => {
   return (
-    <div className='w-full rounded-lg flex flex-col items-center text-center justify-center gap-3 shadow-lg p-2 pb-3'>
-      <div className='w-full aspect-square overflow-hidden'>
+    <div className='w-full rounded-lg flex flex-col items-center text-center justify-center gap-3 shadow-lg p-2 pb-5'>
+      <div className='w-full aspect-auto overflow-hidden'>
         <img src='/expect.jpg' alt='program' className='w-full h-full object-cover rounded-lg' />
       </div>
        <h1 className='text-primary text-xl tracking-wider uppercase'> substance abuse & addiction</h1>
