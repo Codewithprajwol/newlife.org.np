@@ -45,7 +45,7 @@ export default function Header() {
                <NavLink to="/about" className=" hover:underline">
                   Meet the Team
                 </NavLink>
-                <NavLink to="/about/amenities" className=" hover:underline">
+                <NavLink to="/amenities" className=" hover:underline">
                   Amenities
                 </NavLink>
                </div>
