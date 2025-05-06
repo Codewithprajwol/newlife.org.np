@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown, Menu, SearchIcon, X } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
-import { div } from 'framer-motion/client';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

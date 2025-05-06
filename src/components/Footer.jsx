@@ -53,7 +53,7 @@ export default function Footer() {
             <a href="#" className="hover:underline">Brisbane</a>
             <a href="#" className="hover:underline">Melbourne</a>
             <a href="#" className="hover:underline">Sydney</a>
-            <span className="block">Crafted by Prajwol</span>
+            <span className="block">Crafted by newLife</span>
           </div>
         </div>
       </div>
