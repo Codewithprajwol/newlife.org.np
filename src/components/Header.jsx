@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown, Menu, SearchIcon, X } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
+import SearchModal from '../Modals/SearchModal';
 
 export default function Header() {
+  const [isModalOpen,setIsModalOpen]=useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [aboutOpen,setAboutOpen]=useState(false);
   const [programsOpen,setProgramsOpen]=useState(false);
@@ -112,14 +114,14 @@ export default function Header() {
             )}
           </div>
 
-
           <NavLink to="/why" className="hover:underline">What to Expect</NavLink>
           <NavLink to='/location' >Location</NavLink>
           <NavLink to="/faq" className="hover:underline">FAQs</NavLink>
           
           <button>
-            <SearchIcon size={20}/>
+            <SearchIcon onClick={()=>setIsModalOpen(true)} size={20}/>
           </button>
+          <SearchModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
           <button className="bg-[#E7CB93] text-black px-4 py-2 rounded cursor-pointer">
           <NavLink to="/contact">Contact Us</NavLink>
           </button>

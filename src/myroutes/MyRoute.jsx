@@ -8,6 +8,7 @@ import Location from '../pages/Location'
 import ProgramPage from '../pages/Program'
 import Why from '../pages/Why'
 import AboutUs from '../pages/AboutUs'
+import SearchModal from '../Modals/SearchModal'
 
 const MyRoute = () => {
   return (
@@ -21,7 +22,8 @@ const MyRoute = () => {
         <Route path='/location' element={<Location/>} />
         <Route path='/programs' element={<ProgramPage/>} />
         <Route path='/why' element={<Why/>} />
-        <Route path='/amenities' element={<AboutUs/>} />'
+        <Route path='/amenities' element={<AboutUs/>} />
+        <Route path='/search' element={<SearchModal />} />
     </Routes>
     </>
   )
