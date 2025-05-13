@@ -18,7 +18,7 @@ const images = [
   "/water.jpg",
 ];
 
-const AboutUs = () => {
+const Amenities = () => {
   return (
     <div className="w-full overflow-hidden min-h-screen">
       {/* header section */}
@@ -239,4 +239,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Amenities;

@@ -4,6 +4,31 @@ import { Link } from 'react-router-dom'
 import Program from '../components/Program'
 import { Factory, Mail, Phone } from 'lucide-react'
 
+const programData = [
+  {
+    id:1,
+    title: "SUBSTANCE ABUSE & ADDICTION",
+    description:
+      "New Life offers targeted support for individuals struggling with substance abuse and addiction. Our programs are confidential, personalized, and designed for long-term recovery.",
+    image: "/expect.jpg", // Replace with your actual path
+  },
+  {
+    id:2,
+    title: "MENTAL HEALTH & TRAUMA RECOVERY",
+    description:
+      "We provide compassionate care for those experiencing depression, anxiety, PTSD, and trauma. Our holistic approach combines therapy, mindfulness, and medical support and wellbegin",
+    image: "/mental-health.jpg", // Replace with your actual path
+  },
+  {
+    id:3,
+    title: "STRESS, BURNOUT & WELLNESS",
+    description:
+      "New Life's wellness programs are ideal for individuals suffering from chronic stress, burnout, or auto-immune conditions. Reconnect, recharge, and restore your health with us.",
+    image: "/stresshealth.jpg", // Replace with your actual path
+  },
+];
+
+
 const Home = () => {
   return (
     // <div className='w-full h-screen bg-gray-500 text-white flex items-center justify-center flex-col gap-3 px-2'>
@@ -21,9 +46,9 @@ const Home = () => {
         transition={{ duration: 5 }}
       >
         <div className="absolute bg-gradient-to-b from-transparent to-white h-[50vh] w-full"></div>
-        <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-8 h-full grid grid-cols-2">
-          <div className='self-center justify-self-center flex flex-col gap-7'>
-          <h1 className="text-3xl md:text-7xl font-muli font-bold text-white self-end justify-self-center">
+        <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-20 h-full grid grid-cols-2">
+          <div className='max-w-6xl self-center justify-self-center-safe flex flex-col gap-7'>
+          <h1 className=" text-3xl md:text-7xl font-muli font-bold text-white ">
             Begin Your New Life
           </h1>
           <div className='flex items-center gap-3'>
@@ -41,7 +66,7 @@ const Home = () => {
         <div className="text-center  md:w-1/2">
           <h2 className="text-2xl md:text-3xl font-medium text-[#264645] leading-relaxed">
             A premium,<br />
-            private healing<br />
+            private healing
             program by New Life.
           </h2>
           <button className="mt-6 bg-[#e7cb95] cursor-pointer text-white px-6 py-3 rounded-md text-sm font-medium shadow-md hover:opacity-90 transition">
@@ -73,8 +98,8 @@ const Home = () => {
                <p className='text-center text-sm'>New Life offers a private residential retreat with tailored programs designed to support individuals facing challenges such as drug and alcohol dependency, depression and anxiety, PTSD and trauma, chronic stress and burnout, eating disorders, autoimmune conditions, and other health-related concerns.</p>
           </div>
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[1, 2, 3].map((_, idx) => (
-              <Program key={idx} />
+            {programData.map((program) => (
+              <Program key={program.id} programContent={program} />
             ))}
           </div>
         </div>

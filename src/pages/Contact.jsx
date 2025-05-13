@@ -2,12 +2,23 @@
 import { Factory, Mail, Phone } from 'lucide-react';
 import React from 'react'
 import { motion } from 'framer-motion';
-import { div } from 'framer-motion/client';
 
 const Contact = () => {
   return (
     <div className='w-full overflow-hidden'>
-      
+      <motion.div
+        className="relative w-full h-[50vh] bg-[url(/contactdesign.jpg)] bg-cover bg-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 5 }}
+      >
+        <div className="absolute bg-gradient-to-b from-transparent to-white h-[50vh] w-full"></div>
+        <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-8 h-full grid grid-cols-2">
+          <h1 className="text-3xl md:text-7xl font-muli text-primary self-center justify-self-center">
+           Contact Us
+          </h1>
+        </div>
+      </motion.div>
 
     <div className="min-h-screen bg-[#F6F2ED] flex items-center justify-center p-6">
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12">

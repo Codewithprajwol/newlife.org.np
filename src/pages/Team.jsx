@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Factory, Mail, Phone } from 'lucide-react'
 
-const About = () => {
+const Team = () => {
   return (
   <div className='w-full overflow-hidden min-h-screen'>
   <motion.div className="relative w-full h-64 bg-[url(/teamheader.png)] bg-cover bg-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 5 }} >
@@ -127,5 +127,5 @@ Submit
   )
 }
 
-export default About
+export default Team
 

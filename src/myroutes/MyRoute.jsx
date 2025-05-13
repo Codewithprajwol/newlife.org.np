@@ -1,13 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
-import About from '../pages/About'
+import About from '../pages/Team'
 import Contact from '../pages/Contact'
 import FAQs from '../pages/FAQs'
 import Location from '../pages/Location'
 import ProgramPage from '../pages/Program'
 import Why from '../pages/Why'
-import AboutUs from '../pages/AboutUs'
+import AboutUs from '../pages/Amenities'
 import SearchModal from '../Modals/SearchModal'
 
 const MyRoute = () => {
