@@ -17,6 +17,29 @@ const images = [
   "/vr.jpg",
   "/water.jpg",
 ];
+const programData = [
+  {
+    id:1,
+    title: "SUBSTANCE ABUSE & ADDICTION",
+    description:
+      "New Life offers targeted support for individuals struggling with substance abuse and addiction. Our programs are confidential, personalized, and designed for long-term recovery.",
+    image: "/expect.jpg", // Replace with your actual path
+  },
+  {
+    id:2,
+    title: "MENTAL HEALTH & TRAUMA RECOVERY",
+    description:
+      "We provide compassionate care for those experiencing depression, anxiety, PTSD, and trauma. Our holistic approach combines therapy, mindfulness, and medical support and wellbegin",
+    image: "/mental-health.jpg", // Replace with your actual path
+  },
+  {
+    id:3,
+    title: "STRESS, BURNOUT & WELLNESS",
+    description:
+      "New Life's wellness programs are ideal for individuals suffering from chronic stress, burnout, or auto-immune conditions. Reconnect, recharge, and restore your health with us.",
+    image: "/stresshealth.jpg", // Replace with your actual path
+  },
+];
 
 const Amenities = () => {
   return (
@@ -114,8 +137,8 @@ const Amenities = () => {
       <div className="w-full  py-10 md:py-20">
         <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 gap-8">
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[1, 2, 3].map((_, idx) => (
-              <Program key={idx} />
+            {programData.map((program) => (
+              <Program key={program.id} programContent={program} />
             ))}
           </div>
         </div>

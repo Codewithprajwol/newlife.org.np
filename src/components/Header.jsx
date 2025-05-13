@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown, Menu, SearchIcon, X } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigation } from 'react-router-dom';
 import SearchModal from '../Modals/SearchModal';
 
 export default function Header() {
@@ -90,20 +90,18 @@ export default function Header() {
   </div>
 </div>
 
-
-
           {/* About part */}
-          <div onClick={() => setAboutOpen(!aboutOpen)} className="relative flex items-center gap-1 about-dropdown cursor-pointer">
-            <button
+          <div   className="relative flex items-center gap-1 about-dropdown cursor-pointer">
+            <Link to="/about"
               className="hover:underline focus:outline-none about-button cursor-pointer"
             >
               About 
-            </button>
-            <ChevronDown className={`transition-transform duration-300 size-4 ${aboutOpen ? "rotate-180" : ""}`} />
+            </Link>
+            <ChevronDown onClick={() => setAboutOpen(!aboutOpen)} className={`transition-transform duration-300 size-4 ${aboutOpen ? "rotate-180" : ""}`} />
             {aboutOpen && (
               <div className=" absolute top-full left-1/2 -translate-x-1/2 mt-2 w-32 bg-white text-[#3A5451] shadow-lg rounded-md z-50 py-4">
                <div className="w-full flex items-center flex-col gap-4">
-               <NavLink to="/about" className=" hover:underline">
+               <NavLink to="/team" className=" hover:underline">
                   Meet the Team
                 </NavLink>
                 <NavLink to="/amenities" className=" hover:underline">

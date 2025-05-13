@@ -1,14 +1,15 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home'
-import About from '../pages/Team'
-import Contact from '../pages/Contact'
 import FAQs from '../pages/FAQs'
 import Location from '../pages/Location'
 import ProgramPage from '../pages/Program'
 import Why from '../pages/Why'
-import AboutUs from '../pages/Amenities'
 import SearchModal from '../Modals/SearchModal'
+import Amenities from '../pages/Amenities'
+import Team from '../pages/Team'
+import About from '../pages/About'
+import ContactPage from '../pages/ContactPage'
 
 const MyRoute = () => {
   return (
@@ -16,13 +17,14 @@ const MyRoute = () => {
     <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/home' element={<Home/>} />
+        <Route path='/team' element={<Team/>} />
         <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact/>} />
+        <Route path='/contact' element={<ContactPage/>} />
         <Route path='/faq' element={<FAQs/>} />
         <Route path='/location' element={<Location/>} />
         <Route path='/programs' element={<ProgramPage/>} />
         <Route path='/why' element={<Why/>} />
-        <Route path='/amenities' element={<AboutUs/>} />
+        <Route path='/amenities' element={<Amenities/>} />
         <Route path='/search' element={<SearchModal />} />
     </Routes>
     </>

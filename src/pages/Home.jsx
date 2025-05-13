@@ -52,8 +52,8 @@ const Home = () => {
             Begin Your New Life
           </h1>
           <div className='flex items-center gap-3'>
-            <button className='px-3 py-2 bg-secondary rounded-md cursor-pointer'>Our Program</button>
-            <button className='bg-secondary px-3 py-2 rounded-md cursor-pointer' ><Link to='/contact'>Contact Us</Link></button>
+            <button className='px-3 py-2  bg-secondary text-primary rounded-md cursor-pointer'>Our Program</button>
+            <button className='bg-secondary px-3 py-2 text-primary rounded-md cursor-pointer' ><Link to='/contact'>Contact Us</Link></button>
           </div>
           </div>
         </div>

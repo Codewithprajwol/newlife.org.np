@@ -1,26 +1,9 @@
-
-import { Factory, Mail, Phone } from 'lucide-react';
+import { Factory, Mail, Phone } from 'lucide-react'
 import React from 'react'
-import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div className='w-full overflow-hidden'>
-      <motion.div
-        className="relative w-full h-[50vh] bg-[url(/contactdesign.jpg)] bg-cover bg-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 5 }}
-      >
-        <div className="absolute bg-gradient-to-b from-transparent to-white h-[50vh] w-full"></div>
-        <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-8 h-full grid grid-cols-2">
-          <h1 className="text-3xl md:text-7xl font-muli text-primary self-center justify-self-center">
-           Contact Us
-          </h1>
-        </div>
-      </motion.div>
-
-    <div className="min-h-screen bg-[#F6F2ED] flex items-center justify-center p-6">
+    <div className="min-h-screen w-full bg-[#F6F2ED] flex items-center justify-center p-6">
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12">
 
         {/* we are here to part*/}
@@ -35,7 +18,7 @@ const Contact = () => {
   
     {/* contact-part */}
           <div className="flex flex-col gap-4 text-gray-700">
-             <h1 className='uppercase font-semibold tracking-widest '>contact us</h1>
+             <h1 className='uppercase font-semibold tracking-widest'>contact us</h1>
             <div className="flex items-center gap-3">
               <span className="text-yellow-600 text-xl"><Phone/></span>
               <span>+977-9852067944</span>
@@ -115,12 +98,7 @@ const Contact = () => {
 
       </div>
     </div>
-    </div>
-  );
-
+  )
 }
 
 export default Contact
-
-
- 
