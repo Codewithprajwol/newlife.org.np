@@ -8,6 +8,7 @@
 :root{
     --primary:#3A5451;
     --dropdown:#F4F5F5;
+    --secondary:#E8CB93;
 }
 
 @layer utilities{
@@ -16,6 +17,9 @@
     }
     .bg-primary{
         background-color: var(--primary);
+    }
+    .bg-secondary{
+        background-color: var(--secondary);
     }
     .font-muli{
         font-family: "muli", sans-serif;

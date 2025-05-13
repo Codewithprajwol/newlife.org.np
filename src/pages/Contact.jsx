@@ -1,9 +1,14 @@
 
 import { Factory, Mail, Phone } from 'lucide-react';
 import React from 'react'
+import { motion } from 'framer-motion';
+import { div } from 'framer-motion/client';
 
 const Contact = () => {
   return (
+    <div className='w-full overflow-hidden'>
+      
+
     <div className="min-h-screen bg-[#F6F2ED] flex items-center justify-center p-6">
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12">
 
@@ -98,6 +103,7 @@ const Contact = () => {
         </form>
 
       </div>
+    </div>
     </div>
   );
 
