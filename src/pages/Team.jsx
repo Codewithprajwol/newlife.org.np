@@ -15,7 +15,7 @@ const Team = () => {
 <div className='w-full max-w-screen-md mx-auto px-4 sm:px-2 lg:px-8 relative py-10 sm:py-20'>
   {/* showing team members data */}
     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
-      {["/team1.jpg", "/team2.jpg", "/team3.jpg", "/team4.jpg"].map((src, idx) => (
+      {["/team1.jpg", "/team2.jpg", "/team3.jpg", "/team4.jpg",'/team1.jpg',"/team2.jpg","/team3.jpg","/team4.jpg"].map((src, idx) => (
         <div key={idx} className="flex flex-col items-center">
           <img src={src} alt={`team${idx}`} className="w-32 h-32 rounded-full object-cover object-top-right shadow-lg" />
           <p className="mt-4 text-sm font-medium">Team Member</p>

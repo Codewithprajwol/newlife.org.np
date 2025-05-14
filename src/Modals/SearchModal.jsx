@@ -1,11 +1,15 @@
 import React from "react";
 import { createPortal } from "react-dom";
+import {motion} from "framer-motion";
 
 const SearchModal = ({isModalOpen,setIsModalOpen}) => {
   if(!isModalOpen) return null; // If modal is not open, return null
 
 return createPortal(
-    <div className="min-h-screen fixed z-[9999] inset-0 flex items-center justify-center bg-primary overflow-hidden px-4">
+    <motion.div   initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  exit={{ opacity: 0, scale: 0.9 }}
+  transition={{ duration: 0.3, ease: "easeOut" }}  className="min-h-screen fixed z-[9999] inset-0 flex items-center justify-center bg-primary overflow-hidden px-4">
       {/* main  Card  created using blur effect*/}
       <div className="relative bg-white/10 backdrop-blur-2xl rounded-2xl shadow-2xl px-2 sm:px-10 py-12 max-w-xl w-full transition-all duration-300">
         {/* Header */}
@@ -36,7 +40,7 @@ return createPortal(
       {/* certain design effect */}
       <div className="absolute w-80 h-80 bg-yellow-300 opacity-20 rounded-full -bottom-20 -right-20 blur-3xl pointer-events-none animate-pulse"></div>
       <div className="absolute w-60 h-60 bg-white opacity-10 rounded-full -bottom-10 -left-10 blur-2xl pointer-events-none animate-spin-slow"></div>
-    </div>
+    </motion.div>
   ,document.getElementById("portal"));
 };
 

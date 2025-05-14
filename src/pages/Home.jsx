@@ -46,9 +46,9 @@ const Home = () => {
         transition={{ duration: 5 }}
       >
         <div className="absolute bg-gradient-to-b from-transparent to-white h-[50vh] w-full"></div>
-        <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-20 h-full grid grid-cols-2">
+        <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-20 h-full grid grid-cols-1 sm:grid-cols-2">
           <div className='max-w-6xl self-center justify-self-center-safe flex flex-col gap-7'>
-          <h1 className=" text-3xl md:text-7xl font-muli font-bold text-white ">
+          <h1 className=" text-5xl md:text-7xl font-muli font-bold text-white ">
             Begin Your New Life
           </h1>
           <div className='flex items-center gap-3'>
@@ -60,22 +60,22 @@ const Home = () => {
       </motion.div>
 
       {/* what to expect page */}
-       <div className="py-12">
-      <div className="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center gap-4">
+       <div className="py-8 w-full">
+      <div className="max-w-screen-lg mx-auto gap-10 px-4 sm:px-10 flex flex-col md:flex-row md:items-center md:justify-end">
         {/* Left Section - Heading and Button */}
-        <div className="text-center  md:w-1/2">
-          <h2 className="text-2xl md:text-3xl font-medium text-[#264645] leading-relaxed">
-            A premium,<br />
+        <div className="text-center justify-self-end-safe lg:w-[40%]">
+          <h2 className="text-2xl md:text-3xl font-medium text-[#264645]  text-center">
+            A premium,
             private healing
-            program by New Life.
+            program.
           </h2>
-          <button className="mt-6 bg-[#e7cb95] cursor-pointer text-white px-6 py-3 rounded-md text-sm font-medium shadow-md hover:opacity-90 transition">
+          <button className="mt-6 bg-[#e7cb95] whitespace-nowrap cursor-pointer text-white text-right px-6 py-3 rounded-md text-sm font-medium shadow-md hover:opacity-90 transition">
             What to Expect
           </button>
         </div>
 
         {/* Right Section - Description */}
-        <div className="text-sm text-[#264645] md:w-1/2 leading-relaxed space-y-4">
+        <div className="text-md text-[#264645] lg:w-[60%] leading-relaxed space-y-4">
           <p>
             New Life is recognized as a trusted sanctuary for those seeking
             comprehensive and compassionate support. Our private residential

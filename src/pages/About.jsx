@@ -14,10 +14,10 @@ const About=()=>{
         <div className="absolute bg-gradient-to-b from-transparent to-white h-64 w-full"></div>
         <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-8 h-full grid grid-cols-2">
           <div className='self-end justify-self-center flex flex-col gap-5'>
-            <h1 className="text-3xl md:text-5xl font-muli text-primary ">
-              About us
+            <h1 className=" md:text-5xl font-muli text-primary ">
+              About Us
           </h1>
-          <p className='text-xl text-primary'>New Life is Nepal's Leading Residential Retreat.</p>
+          <p className='text-xl'>New Life is Nepal's Leading Residential Retreat.</p>
           </div>
         </div>
       </motion.div>
@@ -47,7 +47,7 @@ const About=()=>{
             {/* text div */}
             <div className=' flex items-center md:items-start justify-center flex-col gap-7 sm:px-10 md:px-20 lg:px-32'> 
                 <h1 className='text-primary text-2xl'>Amenities</h1>
-                <button className='px-3 py-2 bg-secondary text-primary  rounded-md hover:bg-white transition-colors duration-1000 cursor-pointer  '><Link to='/amenities'>More Information</Link></button>
+                <button className='px-3 py-2 bg-secondary text-primary  rounded-md hover:bg-[#DEB841] hover:text-white transition-colors duration-1000 cursor-pointer  '><Link to='/amenities'>More Information</Link></button>
             </div>
 
         </div>
@@ -60,7 +60,7 @@ const About=()=>{
             {/* text div */}
             <div className=' flex items-center md:items-start justify-center flex-col gap-7 sm:px-10 md:px-20 lg:px-32'> 
                 <h1 className='text-primary text-2xl'>FAQs</h1>
-                <button className='px-3 py-2 bg-secondary text-primary  rounded-md hover:bg-white transition-colors duration-1000 cursor-pointer  '><Link to='/faq'>More Information</Link></button>
+                <button className='px-3 py-2 bg-secondary text-primary  rounded-md hover:bg-[#DEB841] hover:text-white transition-colors duration-1000 cursor-pointer  '><Link to='/faq'>More Information</Link></button>
             </div>
             {/* image div */}
             <div className='w-full h-auto overflow-hidden rounded-md '>

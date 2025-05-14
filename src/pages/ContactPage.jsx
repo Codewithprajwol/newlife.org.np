@@ -13,8 +13,8 @@ const ContactPage = () => {
         transition={{ duration: 5 }}
       >
         <div className="absolute bg-gradient-to-b from-transparent to-white h-64 w-full"></div>
-        <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-8 h-full grid grid-cols-2">
-          <h1 className="text-3xl md:text-7xl font-muli text-primary self-center justify-self-center">
+        <div className="relative z-20 w-full w-max-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-8 h-full grid grid-cols-1 sm:grid-cols-2">
+          <h1 className="text-5xl md:text-7xl font-muli text-primary self-center justify-self-center">
            Contact Us
           </h1>
         </div>
