@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ChevronDown, Menu, SearchIcon, X } from 'lucide-react';
-import { Link, NavLink, useNavigation } from 'react-router-dom';
+import { Link, NavLink} from 'react-router-dom';
 import SearchModal from '../Modals/SearchModal';
 
 export default function Header() {
@@ -46,9 +46,9 @@ export default function Header() {
         <nav className="hidden lg:flex gap-6 items-center text-sm ">
 
           {/* Programs part */}
-          <div onClick={()=>setProgramsOpen(!programsOpen)} className='relative flex items-center gap-1 programs-dropdown cursor-pointer'>
-            <button className="hover:underline focus:outline-none programs-button cursor-pointer">Programs</button>
-            <ChevronDown className={`transition-transform duration-300 size-4 ${programsOpen ? "rotate-180" : ""}`} />
+          <div  className='relative flex items-center gap-1 programs-dropdown cursor-pointer'>
+            <button className="hover:underline focus:outline-none programs-button cursor-pointer"><Link to="/programs">Programs</Link></button>
+            <ChevronDown onClick={()=>setProgramsOpen(!programsOpen)} className={`transition-transform duration-300 size-4 ${programsOpen ? "rotate-180" : ""}`} />
           </div>
           <div
   className={`programs-content absolute top-full left-0 bg-dropdown w-full overflow-hidden transition-all duration-[700ms] ease-in-out ${
