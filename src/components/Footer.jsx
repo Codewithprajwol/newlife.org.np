@@ -44,17 +44,13 @@ export default function Footer() {
               <Twitter size={18} />
             </a>
           </div>
+          <div className="text-xs text-gray-300 mt-2 flex flex-wrap gap-x-4 gap-y-2">
+            <span className="block">Crafted by newLife</span>
+          </div>
           <p className="text-xs text-gray-300">
             © 2025 New Life. Operates in compliance with ISO9001:2015 Quality Management System Standard.
           </p>
-          <div className="text-xs text-gray-300 mt-2 flex flex-wrap gap-x-4 gap-y-2">
-            <a href="#" className="hover:underline">Patient Privacy</a>
-            <a href="#" className="hover:underline">Terms & Privacy</a>
-            <a href="#" className="hover:underline">Brisbane</a>
-            <a href="#" className="hover:underline">Melbourne</a>
-            <a href="#" className="hover:underline">Sydney</a>
-            <span className="block">Crafted by newLife</span>
-          </div>
+          
         </div>
       </div>
     </footer>

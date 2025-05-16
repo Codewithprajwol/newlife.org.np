@@ -98,25 +98,25 @@ export default function Header() {
               About 
             </Link>
             <ChevronDown onClick={() => setAboutOpen(!aboutOpen)} className={`transition-transform duration-300 size-4 ${aboutOpen ? "rotate-180" : ""}`} />
-            {aboutOpen && (
-              <div className=" absolute top-full left-1/2 -translate-x-1/2 mt-2 w-32 bg-white text-[#3A5451] shadow-lg rounded-md z-50 py-4">
-               <div className="w-full flex items-center flex-col gap-4">
-               <NavLink to="/team" className=" hover:underline">
-                  Meet the Team
-                </NavLink>
-                <NavLink to="/amenities" className=" hover:underline">
-                  Amenities
-                </NavLink>
-               </div>
-              </div>
-            )}
+            
+                <div className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-32 bg-white text-[#3A5451] shadow-lg rounded-md z-50  transition-all overflow-hidden duration-[700ms] ease-in-out ${aboutOpen? 'opacity-100 max-h-40 py-4' : 'opacity-0 max-h-0 py-0'}`}>
+                <div onClick={()=>setAboutOpen(false)} className="w-full flex items-center flex-col gap-4">
+                <NavLink to="/team" className=" hover:underline">
+                    Meet the Team
+                  </NavLink>
+                  <NavLink to="/amenities" className=" hover:underline">
+                    Amenities
+                  </NavLink>
+                </div>
+                </div>
+            
           </div>
 
           <NavLink to="/why" className="hover:underline">What to Expect</NavLink>
-          <NavLink to='/location' >Location</NavLink>
+          <NavLink to='/location' className="hover:underline" >Location</NavLink>
           <NavLink to="/faq" className="hover:underline">FAQs</NavLink>
           
-          <button>
+          <button className='cursor-pointer'>
             <SearchIcon onClick={()=>setIsModalOpen(true)} size={20}/>
           </button>
           <SearchModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>

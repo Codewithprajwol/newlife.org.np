@@ -70,7 +70,7 @@ const Home = () => {
             program.
           </h2>
           <button className="mt-6 bg-[#e7cb95] whitespace-nowrap cursor-pointer text-white text-right px-6 py-3 rounded-md text-sm font-medium shadow-md hover:opacity-90 transition">
-            What to Expect
+           <Link to='/why'> What to Expect</Link>
           </button>
         </div>
 
