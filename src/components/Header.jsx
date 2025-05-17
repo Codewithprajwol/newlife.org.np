@@ -62,7 +62,7 @@ export default function Header() {
       <ul className="space-y-1">
         <li className="hover:underline cursor-pointer">Alcohol <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer">Illicit Drugs <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Prescription Medication (Painkiller) <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer">Gambling <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
 
@@ -75,16 +75,26 @@ export default function Header() {
         <li className="hover:underline cursor-pointer">OCD <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer">Bipolar Disorder <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer">Eating Disorders <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer">Failure <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
 
     {/* Column 3 */}
     <div>
-      <h3 className="font-semibold text-gray-800 mb-2">PTSD, Trauma & Grief</h3>
+      <h3 className="font-semibold text-gray-800 mb-2"> Trauma & Grief</h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer">PTSD <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer">Trauma <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Grief <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer">Loss of Family Members <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer">Relationship Breakups <span className="text-yellow-400">›</span></li>
+      </ul>
+    </div>
+    {/* column 4 */}
+     <div>
+      <h3 className="font-semibold text-gray-800 mb-2">Lifestyle & Digital Wellness
+
+</h3>
+      <ul className="space-y-1">
+        <li className="hover:underline cursor-pointer">Digital Detox  <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
   </div>
