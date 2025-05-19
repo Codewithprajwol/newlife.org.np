@@ -60,9 +60,9 @@ export default function Header() {
     <div>
       <h3 className="font-semibold text-gray-800 mb-2">Substance Abuse & Addiction</h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer">Alcohol <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Illicit Drugs <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Gambling <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/alcohol">Alcohol</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/illicit-drugs">Illicit Drugs</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/gambling">Gambling</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
 
@@ -144,7 +144,7 @@ export default function Header() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="lg:hidden bg-[#3A5451] text-white px-4 pb-4 flex items-center justify-start flex-col gap-3">
-           <NavLink to="/programs" className="hover:underline">Programs</NavLink>
+          <NavLink to="/programs" className="hover:underline">Programs</NavLink>
           <NavLink to="/about" className="hover:underline">About</NavLink>
           <NavLink to="/why" className="hover:underline">What to Expect</NavLink>
           <NavLink to='/location' className="hover:underline" >Location</NavLink>

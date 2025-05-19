@@ -49,7 +49,7 @@ const Why = () => {
         </div>
       </div>
       {/* more about page */}
-      <div className='w-full bg-[#FEF5EF]'>
+      <div className='w-full bg-secondary-light'>
       <div className='max-w-6xl mx-auto w-full px-4 sm:px-6 py-10 md:py-20'>
         <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8'>
             {/* image div */}

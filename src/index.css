@@ -9,6 +9,7 @@
     --primary:#3A5451;
     --dropdown:#F4F5F5;
     --secondary:#E8CB93;
+    --secondary-light:#FEF5EF;
 }
 
 @layer utilities{
@@ -26,6 +27,9 @@
     }
     .bg-dropdown{
         background-color: var(--dropdown);
+    }
+    .bg-secondary-light{
+        background-color: var(--secondary-light);
     }
 
 }
