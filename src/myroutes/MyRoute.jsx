@@ -11,6 +11,7 @@ import Team from '../pages/Team'
 import About from '../pages/About'
 import ContactPage from '../pages/ContactPage'
 import AlcoholPage from '../pages/TreatmentPages/AlcoholPage'
+import AddictionPage from '../pages/TreatmentPages/AddictionPage'
 
 const MyRoute = () => {
   return (
@@ -27,7 +28,8 @@ const MyRoute = () => {
         <Route path='/why' element={<Why/>} />
         <Route path='/amenities' element={<Amenities/>} />
         <Route path='/search' element={<SearchModal />} />
-        <Route path='/treatment/alcohol' element={<AlcoholPage/>} />
+        {/* <Route path='/treatment/alcohol' element={<AlcoholPage/>} /> */}
+        <Route path='treatment/:type' element={<AddictionPage />} />
     </Routes>
     </>
   )

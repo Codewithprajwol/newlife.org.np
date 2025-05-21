@@ -74,7 +74,7 @@ export default function Header() {
         <li className="hover:underline cursor-pointer">Anxiety <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer">OCD <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer">Bipolar Disorder <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Eating Disorders <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/eatingDisorders">Eating Disorders</NavLink> <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer">Failure <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
