@@ -14,12 +14,13 @@ const AddictionPage = () => {
   return (
     <div className="w-full overflow-hidden min-h-screen">
       {/* header section */}
-      <motion.div
-        className="relative w-full h-64 bg-[url(/alcohol.jpg)] bg-cover  bg-[position:70%_30%] "
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 5 }}
-      >
+     <motion.div
+     style={{ backgroundImage: `url('${data.image}')` }}
+  className={`relative w-full h-64 bg-cover bg-[position:70%_30%] `}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 5 }}
+>
         <div className="absolute bg-gradient-to-b from-transparent to-white h-64 w-full"></div>
         <div className="relative z-20 w-full max-w-screen-xl mx-auto px-4 py-3 sm:px-6 lg:px-8 h-full grid grid-rows-4 grid-cols-3 gap-2">
           <h1 className=" md:text-4xl whitespace-nowrap font-muli text-primary row-start-2 self-end ">{data.title}</h1>

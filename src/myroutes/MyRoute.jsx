@@ -29,7 +29,7 @@ const MyRoute = () => {
         <Route path='/amenities' element={<Amenities/>} />
         <Route path='/search' element={<SearchModal />} />
         {/* <Route path='/treatment/alcohol' element={<AlcoholPage/>} /> */}
-        <Route path='treatment/:type' element={<AddictionPage />} />
+        <Route path='/treatment/:type' element={<AddictionPage />} />
     </Routes>
     </>
   )

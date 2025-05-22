@@ -61,7 +61,7 @@ export default function Header() {
       <h3 className="font-semibold text-gray-800 mb-2">Substance Abuse & Addiction</h3>
       <ul className="space-y-1">
         <li className="hover:underline cursor-pointer"><NavLink to="/treatment/alcohol">Alcohol</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/illicit-drugs">Illicit Drugs</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/illicitDrugs">Illicit Drugs</NavLink> <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer"><NavLink to="/treatment/gambling">Gambling</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
@@ -70,12 +70,12 @@ export default function Header() {
     <div>
       <h3 className="font-semibold text-gray-800 mb-2">Mental Health</h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer">Depression <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Anxiety <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">OCD <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Bipolar Disorder <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/depression'>Depression</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/anxiety'>Anxiety</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/ocd'>OCD</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/bipolar'>Bipolar Disorder</NavLink> <span className="text-yellow-400">›</span></li>
         <li className="hover:underline cursor-pointer"><NavLink to="/treatment/eatingDisorders">Eating Disorders</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Failure <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/failure">Failure</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
 
@@ -83,9 +83,9 @@ export default function Header() {
     <div>
       <h3 className="font-semibold text-gray-800 mb-2"> Trauma & Grief</h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer">Trauma <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Loss of Family Members <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer">Relationship Breakups <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/trauma">Trauma</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/lossOfFamilyMembers">Loss of Family Members</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/relationshipBreakups">Relationship Breakups</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
     {/* column 4 */}
@@ -94,7 +94,7 @@ export default function Header() {
 
 </h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer">Digital Detox  <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/digitalDetox">Digital Detox</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
   </div>
