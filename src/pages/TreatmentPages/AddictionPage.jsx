@@ -65,6 +65,39 @@ const AddictionPage = () => {
           {data.remedies.map((rem, index) => <RemedyCard key={index} title={rem.title} description={rem.description} img={rem.img}/>)}
         </div>
       </div>
+      {/* what to expect section */}
+            <div className="w-full bg-[#F9F9F9] py-10 md:py-20">
+              <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* What to Expect section starts*/}
+                <div className="flex flex-col items-center text-center">
+                  <img
+                    src="/expect.jpg"
+                    alt="What to Expect"
+                    className="w-full h-64 object-cover rounded-lg shadow-md"
+                  />
+                  <Link to="/why" className="text-2xl font-semibold mt-4">
+                    What to Expect
+                  </Link>
+                  <p className="mt-2 text-gray-600">
+                    The highest level of individualized care in Nepal.
+                  </p>
+                </div>
+      
+                {/* Time & Cost section starts*/}
+                <div className="flex flex-col items-center text-center">
+                  <img
+                    src="/time.jpg"
+                    alt="Time & Cost"
+                    className="w-full h-64 object-cover rounded-lg shadow-md"
+                  />
+                  <h2 className="text-2xl font-semibold mt-4">Time & Cost</h2>
+                  <p className="mt-2 text-gray-600">
+                    NewLife's solution-focused programs are highly personalized. For
+                    an obligation-free consultation, contact us now.
+                  </p>
+                </div>
+              </div>
+            </div>
     </div>
   )
 }

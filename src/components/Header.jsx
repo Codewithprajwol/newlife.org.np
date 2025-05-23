@@ -46,23 +46,29 @@ export default function Header() {
         <nav className="hidden lg:flex gap-6 items-center text-sm ">
 
           {/* Programs part */}
-          <div  className='relative flex items-center gap-1 programs-dropdown cursor-pointer'>
-            <button className="hover:underline focus:outline-none programs-button cursor-pointer"><Link to="/programs">Programs</Link></button>
-            <ChevronDown onClick={()=>setProgramsOpen(!programsOpen)} className={`transition-transform duration-300 size-4 ${programsOpen ? "rotate-180" : ""}`} />
-          </div>
           <div
+  className='relative flex items-center gap-1 programs-dropdown cursor-pointer'
+  onClick={() => setProgramsOpen(!programsOpen)}
+>
+  <button className="hover:underline focus:outline-none programs-button cursor-pointer">
+    <Link to="/programs">Programs</Link>
+  </button>
+  <ChevronDown className={`transition-transform duration-300 size-4 ${programsOpen ? "rotate-180" : ""}`} />
+</div>
+<div
   className={`programs-content absolute top-full left-0 bg-dropdown w-full overflow-hidden transition-all duration-[700ms] ease-in-out ${
     programsOpen ? 'opacity-100' : 'h-0 opacity-0'
   }`}
+  onClick={e => e.stopPropagation()}
 >
   <div className="flex justify-around p-6 text-sm text-gray-700">
     {/* Column 1 */}
     <div>
       <h3 className="font-semibold text-gray-800 mb-2">Substance Abuse & Addiction</h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/alcohol">Alcohol</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/illicitDrugs">Illicit Drugs</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/gambling">Gambling</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/alcohol" onClick={()=>setProgramsOpen(false)}>Alcohol</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/illicitDrugs" onClick={()=>setProgramsOpen(false)}>Illicit Drugs</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/gambling" onClick={()=>setProgramsOpen(false)}>Gambling</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
 
@@ -70,12 +76,12 @@ export default function Header() {
     <div>
       <h3 className="font-semibold text-gray-800 mb-2">Mental Health</h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/depression'>Depression</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/anxiety'>Anxiety</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/ocd'>OCD</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/bipolar'>Bipolar Disorder</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/eatingDisorders">Eating Disorders</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/failure">Failure</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/depression' onClick={()=>setProgramsOpen(false)}>Depression</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/anxiety' onClick={()=>setProgramsOpen(false)}>Anxiety</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/ocd' onClick={()=>setProgramsOpen(false)}>OCD</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to='/treatment/bipolar' onClick={()=>setProgramsOpen(false)}>Bipolar Disorder</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/eatingDisorders" onClick={()=>setProgramsOpen(false)}>Eating Disorders</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/failure" onClick={()=>setProgramsOpen(false)}>Failure</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
 
@@ -83,9 +89,9 @@ export default function Header() {
     <div>
       <h3 className="font-semibold text-gray-800 mb-2"> Trauma & Grief</h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/trauma">Trauma</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/lossOfFamilyMembers">Loss of Family Members</NavLink> <span className="text-yellow-400">›</span></li>
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/relationshipBreakups">Relationship Breakups</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/trauma" onClick={()=>setProgramsOpen(false)}>Trauma</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/lossOfFamilyMembers" onClick={()=>setProgramsOpen(false)}>Loss of Family Members</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/relationshipBreakups" onClick={()=>setProgramsOpen(false)}>Relationship Breakups</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
     {/* column 4 */}
@@ -94,7 +100,7 @@ export default function Header() {
 
 </h3>
       <ul className="space-y-1">
-        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/digitalDetox">Digital Detox</NavLink> <span className="text-yellow-400">›</span></li>
+        <li className="hover:underline cursor-pointer"><NavLink to="/treatment/digitalDetox" onClick={()=>setProgramsOpen(false)}>Digital Detox</NavLink> <span className="text-yellow-400">›</span></li>
       </ul>
     </div>
   </div>

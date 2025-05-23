@@ -1,4 +1,3 @@
-// dataMap.js
 export const dataMap = {
   alcohol: {
     title: 'Alcohol Addiction',
@@ -85,15 +84,10 @@ export const dataMap = {
         description: 'Overdose risk, psychosis, headaches, nausea, sweating, and tremors.'
       },
       {
-        image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80', // broken relationships
-        topic: 'Broken Relationships',
-        description: 'Conflicts, separation, divorce, and custody battles.'
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80', // financial legal
+        image: 'https://images.unsplash.com/photo-1556740772-1a741367b93e?auto=format&fit=crop&w=400&q=80', // financial/legal documents
         topic: 'Financial & Legal Problems',
         description: 'Job loss, business failure, and possible imprisonment.'
-      },
+            },
       {
         image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80', // poor wellbeing
         topic: 'Poor Wellbeing',
@@ -112,17 +106,17 @@ export const dataMap = {
       {
         title: 'Detox',
         description: 'We begin by identifying all underlying factors — physical, mental, and emotional. Detox is supported 24/7 by trained staff in a safe and peaceful environment designed to reduce discomfort.',
-        img: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80' // detox
+        img: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80' // detox/rehab
       },
       {
         title: 'Rehabilitation',
         description: 'Your program is tailored just for you. We combine medical support, psychological therapy, and alternative methods to ensure lasting change.',
-        img: 'https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80' // therapy
+        img: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80' // therapy/group
       },
       {
         title: 'Aftercare',
         description: 'Healing doesn’t end when you leave. Our follow-up care gives you the structure, tools, and support needed for long-term success in everyday life.',
-        img: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=400&q=80' // aftercare/support
+        img: 'https://plus.unsplash.com/premium_photo-1664442394395-d13dab76c3b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWZ0ZXIlMjBjYXJlfGVufDB8fDB8fHww' // support/aftercare
       }
     ]
   },
@@ -217,7 +211,7 @@ export const dataMap = {
         description: 'Ritualistic and erratic food preparation behaviors.'
       },
       {
-        image: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1679505519488-c6de54a510c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGJvZHklMjBvYnNzZXNzaW9ufGVufDB8fDB8fHww ',
         topic: 'Body Image Obsession',
         description: 'Obsession with body image and strict nutritional rules.'
       },
@@ -249,7 +243,7 @@ export const dataMap = {
       {
         title: 'Implement',
         description: 'Long-term recovery depends on integrating new skills and insights into daily life. We provide continuous post-program follow-up and support, including coaching your support network and social circle to help sustain positive changes.',
-        img: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=400&q=80'
+        img: 'https://images.unsplash.com/photo-1647872924993-1348784ee77c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGFjdGlvbiUyMHRha2VyfGVufDB8fDB8fHww'
       }
     ]
   },
@@ -285,7 +279,7 @@ export const dataMap = {
         description: 'Isolation, reduced interaction with family and friends.'
       },
       {
-        image: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80', // self-loathing
+        image: 'https://images.unsplash.com/photo-1670820193147-504c8c0f51a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fE5lZ2F0aXZlJTIwc2VsZiUyMHRhbGslMkMlMjBzYWRuZXNzJTJDJTIwZ3VpbHQlMkMlMjBhbmQlMjBsb25lbGluZXNzLnxlbnwwfHwwfHx8MA%3D%3D', // self-loathing
         topic: 'Self-Loathing',
         description: 'Negative self-talk, sadness, guilt, and loneliness.'
       },
@@ -295,7 +289,7 @@ export const dataMap = {
         description: 'Overeating, substance use, gambling, or excessive screen time.'
       },
       {
-        image: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=400&q=80', // lack of focus
+        image: 'https://images.unsplash.com/photo-1627219312666-c5d07f49afa2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fE5lZ2F0aXZlJTIwc2VsZiUyMHRhbGslMkMlMjBzYWRuZXNzJTJDJTIwZ3VpbHQlMkMlMjBhbmQlMjBsb25lbGluZXNzLnxlbnwwfHwwfHx8MA%3D%3D', // lack of focus
         topic: 'Lack of Focus',
         description: 'Difficulty concentrating or staying motivated.'
       }
@@ -317,7 +311,7 @@ export const dataMap = {
       {
         title: 'Implement',
         description: 'We don’t stop at short-term success. Our aftercare ensures you can apply what you learn in daily life, helping you build lasting change and emotional resilience.',
-        img: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=400&q=80' // aftercare
+        img: 'https://images.unsplash.com/photo-1622117523535-ecb446c0c1ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGRvaW5nJTIwdGFza3xlbnwwfHwwfHx8MA%3D%3D' // aftercare
       }
     ]
   },
@@ -351,7 +345,7 @@ anxiety: {
         description: 'Avoiding family and friends, leading to isolation and disconnection.'
       },
       {
-        image: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80', // comfort seeking
+        image: 'https://plus.unsplash.com/premium_photo-1664643216917-739ac776bfce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNlZWtpbmclMjBjb21mb3J0fGVufDB8fDB8fHww', // comfort seeking
         topic: 'Comfort Seeking',
         description: 'Using food, alcohol, drugs, or excessive screen time to escape feelings of stress.'
       },
@@ -383,7 +377,7 @@ anxiety: {
       {
         title: 'Implement',
         description: 'We help you apply what you’ve learned, even after your stay. With structured follow-up and accountability, we support lasting transformation and mental resilience.',
-        img: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=400&q=80' // aftercare
+        img: 'https://plus.unsplash.com/premium_photo-1663099586860-e81d57e8b6bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGFraW5nJTIwYWN0aW9ufGVufDB8fDB8fHww' // aftercare
       }
     ]
   },
@@ -434,7 +428,7 @@ anxiety: {
       {
         title: 'Implement',
         description: 'Your ability to apply new skills in daily life is key to sustainable recovery. We offer ongoing post-program support to ensure you maintain progress and continue to thrive.',
-        img: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=400&q=80'
+        img: 'https://plus.unsplash.com/premium_photo-1663099586860-e81d57e8b6bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGFraW5nJTIwYWN0aW9ufGVufDB8fDB8fHww'
       }
     ]
   },
@@ -468,7 +462,7 @@ anxiety: {
         description: 'Breakdowns caused by erratic behavior.'
       },
       {
-        image: 'https://images.unsplash.com/photo-1515168833906-d2a3b82b302b?auto=format&fit=crop&w=400&q=80',
+        image: 'https://images.unsplash.com/photo-1721815714586-73849a2a163b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aXJyZWd1bGFyJTIwc2xlZXAlMjBwYXR0ZXJufGVufDB8fDB8fHww',
         topic: 'Irregular Sleep Patterns',
         description: 'Insomnia or excessive sleep.'
       },
@@ -495,7 +489,7 @@ anxiety: {
       {
         title: 'Implement',
         description: 'Sustainable recovery relies on applying the changes you learn daily. We provide ongoing post-program follow-up support to help you maintain long-term wellness.',
-        img: 'https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=400&q=80'
+        img: 'https://plus.unsplash.com/premium_photo-1663099586860-e81d57e8b6bd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGFraW5nJTIwYWN0aW9ufGVufDB8fDB8fHww'
       }
     ]
   },
@@ -539,12 +533,12 @@ anxiety: {
         description: 'Lying or hiding gambling from family and friends.'
       },
       {
-        image: '/symptom6.jpg',
+        image: 'https://images.unsplash.com/photo-1642532951964-266b245a05ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJlc3RsZXNzJTIwbmVzc3xlbnwwfHwwfHx8MA%3D%3D',
         topic: 'Restlessness When Stopping',
         description: 'Feeling restless, irritable, or anxious when trying to stop.'
       },
       {
-        image: '/symptom7.jpg',
+        image: 'https://images.unsplash.com/photo-1554188572-9d184b57d8e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmF0aWd1ZXxlbnwwfHwwfHx8MA%3D%3D',
         topic: 'Using Gambling as Escape',
         description: 'Using gambling to escape problems or bad moods.'
       }
